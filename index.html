@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfumaria Quintino | Cosméticos & Higiene Pessoal</title>
+  <title>Perfumaria Quintino | Cosméticos e Higiene Pessoal em São Paulo</title>
   
+  <!-- FAVICON EXATO (Q DOURADO EM FUNDO ROXO/VINHO) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23281424'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-size='65' font-weight='bold' fill='%23cba864'>Q</text></svg>">
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
@@ -18,15 +21,15 @@
 
   <style>
     :root {
-      --bg-cream: #fbf9f5;
+      --bg-cream: #faf7f2;
       --card-bg: #ffffff;
-      --brand-purple: #231221;
-      --brand-purple-hover: #361c33;
-      --brand-gold: #c39b56;
-      --brand-gold-light: #dfc18b;
-      --border-color: #ebdccb;
-      --text-main: #3d3434;
-      --text-muted: #7d726d;
+      --brand-purple: #281424;
+      --brand-purple-hover: #3d1f37;
+      --brand-gold: #cba864;
+      --brand-gold-light: #e0ca97;
+      --border-color: #ebdfd3;
+      --text-main: #332d2b;
+      --text-muted: #786f6a;
     }
     body {
       background-color: var(--bg-cream);
@@ -38,34 +41,34 @@
     }
   </style>
 </head>
-<body class="antialiased selection:bg-[#c39b56] selection:text-[#231221]">
+<body class="antialiased selection:bg-[#cba864] selection:text-[#281424]">
 
   <!-- CABEÇALHO / HEADER FIXO -->
-  <header class="sticky top-0 z-50 bg-[#fbf9f5]/95 backdrop-blur-md border-b border-[#ebdccb]">
+  <header class="sticky top-0 z-50 bg-[#faf7f2]/95 backdrop-blur-md border-b border-[#ebdfd3]">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       
-      <!-- LOGO: Q DOURADO COM FUNDO ROXO/VINHO -->
+      <!-- LOGO: Q DOURADO COM FUNDO ROXO -->
       <a href="#" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-[#231221] flex items-center justify-center border border-[#c39b56]/60 shadow-sm">
-          <span class="font-serif text-2xl font-bold text-[#c39b56] leading-none pb-0.5">Q</span>
+        <div class="w-10 h-10 rounded-xl bg-[#281424] flex items-center justify-center border border-[#cba864]/50 shadow-sm">
+          <span class="font-serif text-2xl font-bold text-[#cba864] leading-none pb-0.5">Q</span>
         </div>
         <div class="flex flex-col">
-          <span class="text-[9px] tracking-[0.25em] text-[#7d726d] uppercase font-bold">Perfumaria</span>
-          <span class="font-serif text-lg font-bold text-[#231221] leading-tight">Quintino</span>
+          <span class="text-[9px] tracking-[0.25em] text-[#786f6a] uppercase font-bold">Perfumaria</span>
+          <span class="font-serif text-lg font-bold text-[#281424] leading-tight">Quintino</span>
         </div>
       </a>
 
       <!-- MENU DESKTOP -->
-      <nav class="hidden md:flex items-center gap-7 text-xs font-semibold text-[#7d726d]">
-        <a href="#inicio" class="hover:text-[#231221] transition-colors">Início</a>
-        <a href="#produtos" class="hover:text-[#231221] transition-colors">Produtos</a>
-        <a href="#sobre" class="hover:text-[#231221] transition-colors">Sobre</a>
-        <a href="#como-chegar" class="hover:text-[#231221] transition-colors">Como Chegar</a>
-        <a href="#contato" class="hover:text-[#231221] transition-colors">Contato</a>
+      <nav class="hidden md:flex items-center gap-7 text-xs font-semibold text-[#786f6a]">
+        <a href="#inicio" class="hover:text-[#281424] transition-colors">Início</a>
+        <a href="#produtos" class="hover:text-[#281424] transition-colors">Produtos</a>
+        <a href="#sobre" class="hover:text-[#281424] transition-colors">Sobre</a>
+        <a href="#como-chegar" class="hover:text-[#281424] transition-colors">Como Chegar</a>
+        <a href="#contato" class="hover:text-[#281424] transition-colors">Contato</a>
       </nav>
 
       <!-- BOTÃO FALE NO WHATSAPP TOPO -->
-      <a href="https://wa.me/5511963126531" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#231221] text-[#c39b56] px-4 py-2 rounded-full text-xs font-semibold shadow hover:bg-[#361c33] transition-all">
+      <a href="https://wa.me/5511963126531" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#281424] text-[#cba864] px-4 py-2 rounded-full text-xs font-semibold shadow hover:bg-[#3d1f37] transition-all">
         <i data-lucide="message-circle" class="w-4 h-4"></i>
         <span>Falar no WhatsApp</span>
       </a>
@@ -75,30 +78,30 @@
   <!-- HERO SECTION -->
   <section id="inicio" class="max-w-6xl mx-auto px-4 pt-8 pb-10">
     <!-- Tag Localização Topo -->
-    <div class="inline-flex items-center gap-2 text-xs text-[#7d726d] bg-white border border-[#ebdccb] px-3.5 py-1.5 rounded-full mb-6 shadow-sm">
-      <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#c39b56]"></i>
+    <div class="inline-flex items-center gap-2 text-xs text-[#786f6a] bg-white border border-[#ebdfd3] px-3.5 py-1.5 rounded-full mb-6 shadow-sm">
+      <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#cba864]"></i>
       <span>Atendimento em São Paulo - SP</span>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div>
-        <p class="text-[11px] uppercase tracking-[0.25em] text-[#7d726d] font-bold mb-3 flex items-center gap-2">
-          <span class="w-4 h-[1px] bg-[#c39b56]"></span> GUIA DE COSMÉTICOS E HIGIENE PESSOAL
+        <p class="text-[11px] uppercase tracking-[0.25em] text-[#786f6a] font-bold mb-3 flex items-center gap-2">
+          <span class="w-4 h-[1px] bg-[#cba864]"></span> LOJA DE COSMÉTICOS E HIGIENE PESSOAL
         </p>
-        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#231221] leading-[1.2] mb-4">
-          Cuidado para todos os <span class="italic font-normal text-[#c39b56]">momentos</span> da sua rotina.
+        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#281424] leading-[1.2] mb-4">
+          Cuidado para todos os <span class="italic font-normal text-[#cba864]">momentos</span> da sua rotina.
         </h1>
-        <p class="text-sm md:text-base text-[#7d726d] leading-relaxed mb-6">
+        <p class="text-sm md:text-base text-[#786f6a] leading-relaxed mb-6">
           Cosméticos, higiene pessoal e produtos para o seu dia a dia, com atendimento próximo no Jardim da Conquista.
         </p>
 
         <div class="flex flex-wrap gap-3">
-          <a href="https://wa.me/5511963126531" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#231221] text-[#c39b56] font-semibold px-5 py-2.5 rounded-xl shadow hover:bg-[#361c33] transition-all text-xs">
+          <a href="https://wa.me/5511963126531" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#281424] text-[#cba864] font-semibold px-5 py-2.5 rounded-xl shadow hover:bg-[#3d1f37] transition-all text-xs">
             <i data-lucide="message-circle" class="w-4 h-4"></i>
             <span>Falar no WhatsApp</span>
           </a>
-          <a href="#como-chegar" class="inline-flex items-center gap-2 bg-white border border-[#ebdccb] text-[#3d3434] font-semibold px-5 py-2.5 rounded-xl shadow-sm hover:border-[#c39b56] transition-all text-xs">
-            <i data-lucide="navigation" class="w-4 h-4 text-[#c39b56]"></i>
+          <a href="#como-chegar" class="inline-flex items-center gap-2 bg-white border border-[#ebdfd3] text-[#332d2b] font-semibold px-5 py-2.5 rounded-xl shadow-sm hover:border-[#cba864] transition-all text-xs">
+            <i data-lucide="navigation" class="w-4 h-4 text-[#cba864]"></i>
             <span>Como chegar</span>
           </a>
         </div>
@@ -106,13 +109,13 @@
 
       <!-- Ilustração Central Hero -->
       <div class="flex justify-center">
-        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full border border-[#ebdccb] p-3 bg-white/40 flex items-center justify-center relative shadow-inner">
-          <div class="w-full h-full rounded-full bg-[#231221]/5 flex items-center justify-center border border-dashed border-[#c39b56]/50">
-            <svg class="w-32 h-32 text-[#231221]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full border border-[#ebdfd3] p-3 bg-white/50 flex items-center justify-center relative shadow-inner">
+          <div class="w-full h-full rounded-full bg-[#281424]/5 flex items-center justify-center border border-dashed border-[#cba864]/50">
+            <svg class="w-32 h-32 text-[#281424]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
               <rect x="5" y="8" width="14" height="14" rx="3" fill="#ffffff" fill-opacity="0.9"/>
               <path d="M9 8V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4" />
-              <circle cx="12" cy="15" r="3.5" stroke="#c39b56" stroke-width="1.5" />
-              <line x1="12" y1="2" x2="12" y2="3.5" stroke="#c39b56" stroke-width="2"/>
+              <circle cx="12" cy="15" r="3.5" stroke="#cba864" stroke-width="1.5" />
+              <line x1="12" y1="2" x2="12" y2="3.5" stroke="#cba864" stroke-width="2"/>
             </svg>
           </div>
         </div>
@@ -121,128 +124,128 @@
 
     <!-- 3 CARDS INICIAIS DE BENEFÍCIOS -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
-      <div class="bg-white border border-[#ebdccb] rounded-2xl p-5 shadow-sm">
-        <div class="w-10 h-10 rounded-xl bg-[#fbf9f5] border border-[#ebdccb] flex items-center justify-center mb-3">
+      <div class="bg-white border border-[#ebdfd3] rounded-2xl p-5 shadow-sm">
+        <div class="w-10 h-10 rounded-xl bg-[#faf7f2] border border-[#ebdfd3] flex items-center justify-center mb-3">
           <i data-lucide="sparkles" class="w-5 h-5 text-[#c39b56]"></i>
         </div>
-        <h2 class="font-serif font-bold text-base text-[#231221] mb-1">Cosméticos e higiene pessoal</h2>
-        <p class="text-xs text-[#7d726d] leading-relaxed">Opções para acompanhar a sua rotina de cuidado diário com praticidade e beleza.</p>
+        <h2 class="font-serif font-bold text-base text-[#281424] mb-1">Cosméticos e higiene pessoal</h2>
+        <p class="text-xs text-[#786f6a] leading-relaxed">Opções para acompanhar a sua rotina de cuidado.</p>
       </div>
 
-      <div class="bg-white border border-[#ebdccb] rounded-2xl p-5 shadow-sm">
-        <div class="w-10 h-10 rounded-xl bg-[#fbf9f5] border border-[#ebdccb] flex items-center justify-center mb-3">
+      <div class="bg-white border border-[#ebdfd3] rounded-2xl p-5 shadow-sm">
+        <div class="w-10 h-10 rounded-xl bg-[#faf7f2] border border-[#ebdfd3] flex items-center justify-center mb-3">
           <i data-lucide="phone-call" class="w-5 h-5 text-[#c39b56]"></i>
         </div>
-        <h2 class="font-serif font-bold text-base text-[#231221] mb-1">Atendimento pelo WhatsApp</h2>
-        <p class="text-xs text-[#7d726d] leading-relaxed">Consulte produtos, disponibilidade e tire todas as suas dúvidas diretamente com nossa equipe.</p>
+        <h2 class="font-serif font-bold text-base text-[#281424] mb-1">Atendimento pelo WhatsApp</h2>
+        <p class="text-xs text-[#786f6a] leading-relaxed">Consulte produtos, disponibilidade e tire suas dúvidas.</p>
       </div>
 
-      <div class="bg-white border border-[#ebdccb] rounded-2xl p-5 shadow-sm">
-        <div class="w-10 h-10 rounded-xl bg-[#fbf9f5] border border-[#ebdccb] flex items-center justify-center mb-3">
+      <div class="bg-white border border-[#ebdfd3] rounded-2xl p-5 shadow-sm">
+        <div class="w-10 h-10 rounded-xl bg-[#faf7f2] border border-[#ebdfd3] flex items-center justify-center mb-3">
           <i data-lucide="store" class="w-5 h-5 text-[#c39b56]"></i>
         </div>
-        <h2 class="font-serif font-bold text-base text-[#231221] mb-1">Loja física no Jardim da Conquista</h2>
-        <p class="text-xs text-[#7d726d] leading-relaxed">Venha conhecer nosso espaço acolhedor e seguro em São Paulo.</p>
+        <h2 class="font-serif font-bold text-base text-[#281424] mb-1">Loja física no Jardim da Conquista</h2>
+        <p class="text-xs text-[#786f6a] leading-relaxed">Venha conhecer nosso espaço em São Paulo.</p>
       </div>
     </div>
   </section>
 
-  <!-- SEÇÃO PRODUTOS & CATEGORIAS (COM MENSAGENS NO WHATSAPP CONFORME SOLICITADO) -->
-  <section id="produtos" class="max-w-6xl mx-auto px-4 py-12 border-t border-[#ebdccb]/60">
+  <!-- SEÇÃO PRODUTOS & CATEGORIAS -->
+  <section id="produtos" class="max-w-6xl mx-auto px-4 py-12 border-t border-[#ebdfd3]/60">
     <div class="text-center mb-8">
-      <p class="text-[11px] uppercase tracking-[0.25em] text-[#7d726d] font-bold mb-1">Produtos & Categorias</p>
-      <h2 class="font-serif text-2xl md:text-3xl font-bold text-[#231221] mb-2">Produtos para a sua rotina</h2>
-      <p class="text-xs text-[#7d726d] max-w-md mx-auto">Encontre opções para cuidado pessoal, higiene e beleza selecionadas para você.</p>
+      <p class="text-[11px] uppercase tracking-[0.25em] text-[#786f6a] font-bold mb-1">Produtos e categorias</p>
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-[#281424] mb-2">Produtos para a sua rotina</h2>
+      <p class="text-xs text-[#786f6a] max-w-md mx-auto">Encontre opções para cuidado pessoal, higiene e beleza.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <!-- Categoria 1 -->
-      <div class="bg-white border border-[#ebdccb] rounded-2xl p-5 flex flex-col justify-between shadow-sm">
+      <div class="bg-white border border-[#ebdfd3] rounded-2xl p-5 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-9 h-9 rounded-xl bg-[#fbf9f5] border border-[#ebdccb] flex items-center justify-center mb-3">
+          <div class="w-9 h-9 rounded-xl bg-[#faf7f2] border border-[#ebdfd3] flex items-center justify-center mb-3">
             <i data-lucide="droplet" class="w-4 h-4 text-[#c39b56]"></i>
           </div>
-          <h3 class="font-serif font-bold text-base text-[#231221] mb-1">Higiene pessoal</h3>
-          <p class="text-xs text-[#7d726d] mb-4">Itens do dia a dia para manter a rotina de limpeza e o bem-estar da sua família.</p>
+          <h3 class="font-serif font-bold text-base text-[#281424] mb-1">Higiene pessoal</h3>
+          <p class="text-xs text-[#786f6a] mb-4">Itens do dia a dia para manter a rotina de limpeza e cuidado em dia.</p>
         </div>
-        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20itens%20de%20Higiene%20Pessoal" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#231221] hover:text-[#c39b56] transition-colors pt-2 border-t border-[#ebdccb]/50">
+        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20itens%20de%20Higiene%20Pessoal" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#281424] hover:text-[#c39b56] transition-colors pt-2 border-t border-[#ebdfd3]/50">
           <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
-          <span>Consultar no WhatsApp</span>
+          <span>Consulte disponibilidade com nossa equipe.</span>
         </a>
       </div>
 
       <!-- Categoria 2 -->
-      <div class="bg-white border border-[#ebdccb] rounded-2xl p-5 flex flex-col justify-between shadow-sm">
+      <div class="bg-white border border-[#ebdfd3] rounded-2xl p-5 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-9 h-9 rounded-xl bg-[#fbf9f5] border border-[#ebdccb] flex items-center justify-center mb-3">
+          <div class="w-9 h-9 rounded-xl bg-[#faf7f2] border border-[#ebdfd3] flex items-center justify-center mb-3">
             <i data-lucide="heart" class="w-4 h-4 text-[#c39b56]"></i>
           </div>
-          <h3 class="font-serif font-bold text-base text-[#231221] mb-1">Cuidados íntimos</h3>
-          <p class="text-xs text-[#7d726d] mb-4">Opções dedicadas para o cuidado diário com toda a atenção e discrição que você merece.</p>
+          <h3 class="font-serif font-bold text-base text-[#281424] mb-1">Cuidados íntimos</h3>
+          <p class="text-xs text-[#786f6a] mb-4">Opções delicadas para o cuidado diário, com atenção ao seu bem-estar.</p>
         </div>
-        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20itens%20de%20Cuidados%20Íntimos" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#231221] hover:text-[#c39b56] transition-colors pt-2 border-t border-[#ebdccb]/50">
+        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20itens%20de%20Cuidados%20Íntimos" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#281424] hover:text-[#c39b56] transition-colors pt-2 border-t border-[#ebdfd3]/50">
           <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
-          <span>Consultar no WhatsApp</span>
+          <span>Consulte disponibilidade com nossa equipe.</span>
         </a>
       </div>
 
       <!-- Categoria 3 -->
-      <div class="bg-white border border-[#ebdccb] rounded-2xl p-5 flex flex-col justify-between shadow-sm">
+      <div class="bg-white border border-[#ebdfd3] rounded-2xl p-5 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-9 h-9 rounded-xl bg-[#fbf9f5] border border-[#ebdccb] flex items-center justify-center mb-3">
+          <div class="w-9 h-9 rounded-xl bg-[#faf7f2] border border-[#ebdfd3] flex items-center justify-center mb-3">
             <i data-lucide="sun" class="w-4 h-4 text-[#c39b56]"></i>
           </div>
-          <h3 class="font-serif font-bold text-base text-[#231221] mb-1">Cuidados com o corpo</h3>
-          <p class="text-xs text-[#7d726d] mb-4">Opções para manter a pele do corpo limpa, hidratada e perfumada todos os dias.</p>
+          <h3 class="font-serif font-bold text-base text-[#281424] mb-1">Cuidados com o corpo</h3>
+          <p class="text-xs text-[#786f6a] mb-4">Opções para manter a pele do corpo limpa, hidratada e cuidada.</p>
         </div>
-        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20itens%20de%20Cuidados%20com%20o%20Corpo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#231221] hover:text-[#c39b56] transition-colors pt-2 border-t border-[#ebdccb]/50">
+        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20itens%20de%20Cuidados%20com%20o%20Corpo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#281424] hover:text-[#c39b56] transition-colors pt-2 border-t border-[#ebdfd3]/50">
           <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
-          <span>Consultar no WhatsApp</span>
+          <span>Consulte disponibilidade com nossa equipe.</span>
         </a>
       </div>
 
       <!-- Categoria 4 -->
-      <div class="bg-white border border-[#ebdccb] rounded-2xl p-5 flex flex-col justify-between shadow-sm">
+      <div class="bg-white border border-[#ebdfd3] rounded-2xl p-5 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-9 h-9 rounded-xl bg-[#fbf9f5] border border-[#ebdccb] flex items-center justify-center mb-3">
+          <div class="w-9 h-9 rounded-xl bg-[#faf7f2] border border-[#ebdfd3] flex items-center justify-center mb-3">
             <i data-lucide="smile" class="w-4 h-4 text-[#c39b56]"></i>
           </div>
-          <h3 class="font-serif font-bold text-base text-[#231221] mb-1">Cuidados com o rosto</h3>
-          <p class="text-xs text-[#7d726d] mb-4">Opções para limpar, hidratar e cuidar da pele do rosto na sua rotina diária de skincare.</p>
+          <h3 class="font-serif font-bold text-base text-[#281424] mb-1">Cuidados com o rosto</h3>
+          <p class="text-xs text-[#786f6a] mb-4">Opções para limpar, hidratar e cuidar da pele do rosto na sua rotina.</p>
         </div>
-        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20itens%20de%20Cuidados%20com%20o%20Rosto" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#231221] hover:text-[#c39b56] transition-colors pt-2 border-t border-[#ebdccb]/50">
+        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20itens%20de%20Cuidados%20com%20o%20Rosto" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#281424] hover:text-[#c39b56] transition-colors pt-2 border-t border-[#ebdfd3]/50">
           <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
-          <span>Consultar no WhatsApp</span>
+          <span>Consulte disponibilidade com nossa equipe.</span>
         </a>
       </div>
 
       <!-- Categoria 5 -->
-      <div class="bg-white border border-[#ebdccb] rounded-2xl p-5 flex flex-col justify-between shadow-sm">
+      <div class="bg-white border border-[#ebdfd3] rounded-2xl p-5 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-9 h-9 rounded-xl bg-[#fbf9f5] border border-[#ebdccb] flex items-center justify-center mb-3">
+          <div class="w-9 h-9 rounded-xl bg-[#faf7f2] border border-[#ebdfd3] flex items-center justify-center mb-3">
             <i data-lucide="scissors" class="w-4 h-4 text-[#c39b56]"></i>
           </div>
-          <h3 class="font-serif font-bold text-base text-[#231221] mb-1">Cabelos</h3>
-          <p class="text-xs text-[#7d726d] mb-4">Opções para lavar, tratar e finalizar os fios no dia a dia com marcas de referência.</p>
+          <h3 class="font-serif font-bold text-base text-[#281424] mb-1">Cabelos</h3>
+          <p class="text-xs text-[#786f6a] mb-4">Opções para lavar, tratar e finalizar os fios no dia a dia.</p>
         </div>
-        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20itens%20de%20Cabelos" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#231221] hover:text-[#c39b56] transition-colors pt-2 border-t border-[#ebdccb]/50">
+        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20itens%20de%20Cabelos" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#281424] hover:text-[#c39b56] transition-colors pt-2 border-t border-[#ebdfd3]/50">
           <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
-          <span>Consultar no WhatsApp</span>
+          <span>Consulte disponibilidade com nossa equipe.</span>
         </a>
       </div>
 
       <!-- Categoria 6 -->
-      <div class="bg-white border border-[#ebdccb] rounded-2xl p-5 flex flex-col justify-between shadow-sm">
+      <div class="bg-white border border-[#ebdfd3] rounded-2xl p-5 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-9 h-9 rounded-xl bg-[#fbf9f5] border border-[#ebdccb] flex items-center justify-center mb-3">
+          <div class="w-9 h-9 rounded-xl bg-[#faf7f2] border border-[#ebdfd3] flex items-center justify-center mb-3">
             <i data-lucide="flower" class="w-4 h-4 text-[#c39b56]"></i>
           </div>
-          <h3 class="font-serif font-bold text-base text-[#231221] mb-1">Cosméticos e autocuidado</h3>
-          <p class="text-xs text-[#7d726d] mb-4">Opções para se presentear e cuidar de si com mais carinho e fragrâncias marcantes.</p>
+          <h3 class="font-serif font-bold text-base text-[#281424] mb-1">Cosméticos e autocuidado</h3>
+          <p class="text-xs text-[#786f6a] mb-4">Opções para se presentear e cuidar de si com mais carinho.</p>
         </div>
-        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20itens%20de%20Cosméticos" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#231221] hover:text-[#c39b56] transition-colors pt-2 border-t border-[#ebdccb]/50">
+        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20itens%20de%20Cosméticos" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#281424] hover:text-[#c39b56] transition-colors pt-2 border-t border-[#ebdfd3]/50">
           <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
-          <span>Consultar no WhatsApp</span>
+          <span>Consulte disponibilidade com nossa equipe.</span>
         </a>
       </div>
     </div>
@@ -251,59 +254,59 @@
   <!-- SEÇÃO DE DESTAQUES -->
   <section class="max-w-6xl mx-auto px-4 py-8">
     <div class="text-center mb-6">
-      <p class="text-[11px] uppercase tracking-[0.25em] text-[#7d726d] font-bold mb-1">Destaques</p>
-      <h2 class="font-serif text-2xl font-bold text-[#231221]">Encontre o que você precisa</h2>
+      <p class="text-[11px] uppercase tracking-[0.25em] text-[#786f6a] font-bold mb-1">Destaques</p>
+      <h2 class="font-serif text-2xl font-bold text-[#281424]">Encontre o que você precisa</h2>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="bg-white border border-[#ebdccb] rounded-2xl p-6 flex flex-col justify-between shadow-sm">
+      <div class="bg-white border border-[#ebdfd3] rounded-2xl p-6 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-8 h-8 rounded-lg bg-[#fbf9f5] flex items-center justify-center mb-3">
+          <div class="w-8 h-8 rounded-lg bg-[#faf7f2] flex items-center justify-center mb-3">
             <i data-lucide="sparkle" class="w-4 h-4 text-[#c39b56]"></i>
           </div>
-          <h3 class="font-serif font-bold text-lg text-[#231221] mb-1">Itens essenciais de higiene</h3>
-          <p class="text-xs text-[#7d726d] mb-6">Consulte produtos disponíveis pelo WhatsApp.</p>
+          <h3 class="font-serif font-bold text-lg text-[#281424] mb-1">Itens essenciais de higiene</h3>
+          <p class="text-xs text-[#786f6a] mb-6">Consulte produtos disponíveis pelo WhatsApp.</p>
         </div>
-        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20os%20itens%20essenciais%20de%20higiene" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-[#231221] text-[#c39b56] py-2.5 rounded-xl text-xs font-semibold hover:bg-[#361c33] transition-all">
+        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20os%20itens%20essenciais%20de%20higiene" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-[#281424] text-[#cba864] py-2.5 rounded-xl text-xs font-semibold hover:bg-[#3d1f37] transition-all">
           Consultar produtos
         </a>
       </div>
 
-      <div class="bg-white border border-[#ebdccb] rounded-2xl p-6 flex flex-col justify-between shadow-sm">
+      <div class="bg-white border border-[#ebdfd3] rounded-2xl p-6 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-8 h-8 rounded-lg bg-[#fbf9f5] flex items-center justify-center mb-3">
+          <div class="w-8 h-8 rounded-lg bg-[#faf7f2] flex items-center justify-center mb-3">
             <i data-lucide="sun-medium" class="w-4 h-4 text-[#c39b56]"></i>
           </div>
-          <h3 class="font-serif font-bold text-lg text-[#231221] mb-1">Cuidados para o dia a dia</h3>
-          <p class="text-xs text-[#7d726d] mb-6">Consulte produtos disponíveis pelo WhatsApp.</p>
+          <h3 class="font-serif font-bold text-lg text-[#281424] mb-1">Cuidados para o dia a dia</h3>
+          <p class="text-xs text-[#786f6a] mb-6">Consulte produtos disponíveis pelo WhatsApp.</p>
         </div>
-        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20produtos%20de%20cuidados%20para%20o%20dia%20a%20dia" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-[#231221] text-[#c39b56] py-2.5 rounded-xl text-xs font-semibold hover:bg-[#361c33] transition-all">
+        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20produtos%20de%20cuidados%20para%20o%20dia%20a%20dia" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-[#281424] text-[#cba864] py-2.5 rounded-xl text-xs font-semibold hover:bg-[#3d1f37] transition-all">
           Consultar produtos
         </a>
       </div>
 
       <div class="bg-white border border-[#ebdccb] rounded-2xl p-6 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-8 h-8 rounded-lg bg-[#fbf9f5] flex items-center justify-center mb-3">
+          <div class="w-8 h-8 rounded-lg bg-[#faf7f2] flex items-center justify-center mb-3">
             <i data-lucide="heart-handshake" class="w-4 h-4 text-[#c39b56]"></i>
           </div>
-          <h3 class="font-serif font-bold text-lg text-[#231221] mb-1">Produtos de autocuidado</h3>
-          <p class="text-xs text-[#7d726d] mb-6">Consulte produtos disponíveis pelo WhatsApp.</p>
+          <h3 class="font-serif font-bold text-lg text-[#281424] mb-1">Produtos de autocuidado</h3>
+          <p class="text-xs text-[#786f6a] mb-6">Consulte produtos disponíveis pelo WhatsApp.</p>
         </div>
-        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20produtos%20de%20autocuidado" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-[#231221] text-[#c39b56] py-2.5 rounded-xl text-xs font-semibold hover:bg-[#361c33] transition-all">
+        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20consultar%20produtos%20de%20autocuidado" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-[#281424] text-[#cba864] py-2.5 rounded-xl text-xs font-semibold hover:bg-[#3d1f37] transition-all">
           Consultar produtos
         </a>
       </div>
 
-      <div class="bg-white border border-[#ebdccb] rounded-2xl p-6 flex flex-col justify-between shadow-sm">
+      <div class="bg-white border border-[#ebdfd3] rounded-2xl p-6 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-8 h-8 rounded-lg bg-[#fbf9f5] flex items-center justify-center mb-3">
+          <div class="w-8 h-8 rounded-lg bg-[#faf7f2] flex items-center justify-center mb-3">
             <i data-lucide="gift" class="w-4 h-4 text-[#c39b56]"></i>
           </div>
-          <h3 class="font-serif font-bold text-lg text-[#231221] mb-1">Opções para presentear</h3>
-          <p class="text-xs text-[#7d726d] mb-6">Consulte produtos disponíveis pelo WhatsApp.</p>
+          <h3 class="font-serif font-bold text-lg text-[#281424] mb-1">Opções para presentear</h3>
+          <p class="text-xs text-[#786f6a] mb-6">Consulte produtos disponíveis pelo WhatsApp.</p>
         </div>
-        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20ver%20opções%20para%20presentear" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-[#231221] text-[#c39b56] py-2.5 rounded-xl text-xs font-semibold hover:bg-[#361c33] transition-all">
+        <a href="https://wa.me/5511963126531?text=Olá,%20gostaria%20de%20ver%20opções%20para%20presentear" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-[#281424] text-[#cba864] py-2.5 rounded-xl text-xs font-semibold hover:bg-[#3d1f37] transition-all">
           Consultar produtos
         </a>
       </div>
@@ -311,66 +314,65 @@
   </section>
 
   <!-- SOBRE A LOJA -->
-  <section id="sobre" class="max-w-6xl mx-auto px-4 py-12 border-t border-[#ebdccb]/60">
+  <section id="sobre" class="max-w-6xl mx-auto px-4 py-12 border-t border-[#ebdfd3]/60">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div>
-        <p class="text-[11px] uppercase tracking-[0.25em] text-[#7d726d] font-bold mb-1">Sobre a Loja</p>
-        <h2 class="font-serif text-2xl md:text-3xl font-bold text-[#231221] mb-4">Perfumaria Quintino</h2>
-        <p class="text-xs md:text-sm text-[#7d726d] leading-relaxed mb-4">
+        <h2 class="font-serif text-2xl md:text-3xl font-bold text-[#281424] mb-4">Perfumaria Quintino</h2>
+        <p class="text-xs md:text-sm text-[#786f6a] leading-relaxed mb-4">
           Somos uma loja de cosméticos e higiene pessoal em São Paulo, preparada para acompanhar os seus momentos de cuidado no dia a dia.
         </p>
-        <p class="text-xs md:text-sm text-[#7d726d] leading-relaxed">
+        <p class="text-xs md:text-sm text-[#786f6a] leading-relaxed">
           Nossa equipe está pronta para ajudar você a consultar produtos, encontrar opções para sua necessidade e escolher itens para autocuidado ou presentes.
         </p>
       </div>
 
       <!-- CARD ROXO COM LOGO GRANDE -->
       <div class="flex justify-center">
-        <div class="w-full max-w-sm bg-[#231221] rounded-3xl p-8 border border-[#c39b56]/30 shadow-xl text-center flex flex-col items-center justify-center relative overflow-hidden">
-          <div class="w-16 h-16 rounded-2xl bg-[#361c33] border border-[#c39b56]/50 flex items-center justify-center mb-4 shadow-md">
-            <span class="font-serif text-4xl font-bold text-[#c39b56] leading-none pb-1">Q</span>
+        <div class="w-full max-w-sm bg-[#281424] rounded-3xl p-8 border border-[#cba864]/30 shadow-xl text-center flex flex-col items-center justify-center relative overflow-hidden">
+          <div class="w-16 h-16 rounded-2xl bg-[#3d1f37] border border-[#cba864]/50 flex items-center justify-center mb-4 shadow-md">
+            <span class="font-serif text-4xl font-bold text-[#cba864] leading-none pb-1">Q</span>
           </div>
           <h3 class="font-serif text-xl font-bold text-[#c39b56] mb-1">Cosméticos & Higiene Pessoal</h3>
-          <p class="text-[11px] uppercase tracking-widest text-[#fbf9f5]/80 font-semibold">Atendimento em São Paulo - SP</p>
+          <p class="text-[11px] uppercase tracking-widest text-[#faf7f2]/80 font-semibold">Atendimento em São Paulo - SP</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- COMO CHEGAR -->
-  <section id="como-chegar" class="max-w-6xl mx-auto px-4 py-12 border-t border-[#ebdccb]/60">
+  <section id="como-chegar" class="max-w-6xl mx-auto px-4 py-12 border-t border-[#ebdfd3]/60">
     <div class="text-center mb-8">
-      <p class="text-[11px] uppercase tracking-[0.25em] text-[#7d726d] font-bold mb-1">Como Chegar</p>
-      <h2 class="font-serif text-2xl md:text-3xl font-bold text-[#231221]">Venha nos visitar</h2>
+      <p class="text-[11px] uppercase tracking-[0.25em] text-[#786f6a] font-bold mb-1">Como chegar</p>
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-[#281424]">Venha nos visitar</h2>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-      <div class="bg-white border border-[#ebdccb] rounded-2xl p-6 flex flex-col justify-between shadow-sm">
+      <div class="bg-white border border-[#ebdfd3] rounded-2xl p-6 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-9 h-9 rounded-xl bg-[#fbf9f5] border border-[#ebdccb] flex items-center justify-center mb-4">
+          <div class="w-9 h-9 rounded-xl bg-[#faf7f2] border border-[#ebdfd3] flex items-center justify-center mb-4">
             <i data-lucide="map-pin" class="w-5 h-5 text-[#c39b56]"></i>
           </div>
-          <h3 class="font-serif font-bold text-lg text-[#231221] mb-1">Travessa Somos Todos Iguais, 741</h3>
-          <p class="text-xs text-[#7d726d] mb-4">Jardim da Conquista - São Paulo/SP</p>
-          <p class="text-xs text-[#7d726d] leading-relaxed">
-            Para confirmar o melhor caminho até a loja, abra o trajeto no Google Maps ou fale com a nossa equipe no WhatsApp.
+          <h3 class="font-serif font-bold text-lg text-[#281424] mb-1">Travessa Somos Todos Iguais, 741</h3>
+          <p class="text-xs text-[#786f6a] mb-4">Jardim da Conquista – São Paulo/SP</p>
+          <p class="text-xs text-[#786f6a] leading-relaxed">
+            Para confirmar o melhor caminho até a loja, abra a rota pelo Google Maps ou fale com a nossa equipe no WhatsApp.
           </p>
         </div>
 
-        <a href="https://maps.google.com/?q=Travessa+Somos+Todos+Iguais+741+Jardim+da+Conquista+São+Paulo+SP" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex items-center justify-center gap-2 bg-[#231221] text-[#c39b56] text-xs font-semibold py-2.5 px-4 rounded-xl shadow hover:bg-[#361c33] transition-all">
+        <a href="https://maps.google.com/?q=Travessa+Somos+Todos+Iguais+741+Jardim+da+Conquista+São+Paulo+SP" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex items-center justify-center gap-2 bg-[#281424] text-[#cba864] text-xs font-semibold py-2.5 px-4 rounded-xl shadow hover:bg-[#3d1f37] transition-all">
           <i data-lucide="map" class="w-4 h-4"></i>
           <span>Abrir rota no Google Maps</span>
         </a>
       </div>
 
-      <div class="bg-white border border-[#ebdccb] rounded-2xl p-6 flex items-center justify-center shadow-sm relative overflow-hidden bg-stone-50">
+      <div class="bg-white border border-[#ebdfd3] rounded-2xl p-6 flex items-center justify-center shadow-sm relative overflow-hidden bg-stone-50">
         <div class="grid grid-cols-3 gap-3 w-full opacity-60">
           <div class="h-20 bg-stone-200 rounded-lg"></div>
-          <div class="h-20 bg-[#ebdccb]/40 rounded-lg"></div>
+          <div class="h-20 bg-[#ebdfd3]/40 rounded-lg"></div>
           <div class="h-20 bg-stone-200 rounded-lg"></div>
-          <div class="h-20 bg-[#ebdccb]/40 rounded-lg"></div>
+          <div class="h-20 bg-[#ebdfd3]/40 rounded-lg"></div>
           <div class="h-20 bg-stone-300 rounded-lg flex items-center justify-center">
-            <i data-lucide="map-pin" class="w-6 h-6 text-[#231221] animate-bounce"></i>
+            <i data-lucide="map-pin" class="w-6 h-6 text-[#281424] animate-bounce"></i>
           </div>
           <div class="h-20 bg-stone-200 rounded-lg"></div>
         </div>
@@ -379,20 +381,20 @@
   </section>
 
   <!-- CONTATO -->
-  <section id="contato" class="max-w-6xl mx-auto px-4 py-12 border-t border-[#ebdccb]/60">
+  <section id="contato" class="max-w-6xl mx-auto px-4 py-12 border-t border-[#ebdfd3]/60">
     <div class="text-center mb-8">
-      <p class="text-[11px] uppercase tracking-[0.25em] text-[#7d726d] font-bold mb-1">Contato</p>
-      <h2 class="font-serif text-2xl md:text-3xl font-bold text-[#231221]">Fale com a Perfumaria Quintino</h2>
+      <p class="text-[11px] uppercase tracking-[0.25em] text-[#786f6a] font-bold mb-1">Contato</p>
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-[#281424]">Fale com a Perfumaria Quintino</h2>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
       <!-- WhatsApp -->
       <div class="bg-white border border-[#ebdccb] rounded-2xl p-5 text-center flex flex-col justify-between shadow-sm">
         <div>
-          <div class="text-[10px] uppercase tracking-wider text-[#7d726d] font-bold mb-1">WhatsApp</div>
-          <p class="font-serif font-bold text-base text-[#231221] mb-4">+55 11 96312-6531</p>
+          <div class="text-[10px] uppercase tracking-wider text-[#786f6a] font-bold mb-1">WhatsApp</div>
+          <p class="font-serif font-bold text-base text-[#281424] mb-4">+55 11 96312-6531</p>
         </div>
-        <a href="https://wa.me/5511963126531" target="_blank" rel="noopener noreferrer" class="w-full bg-[#231221] text-[#c39b56] py-2 rounded-xl text-xs font-semibold hover:bg-[#361c33] transition-all">
+        <a href="https://wa.me/5511963126531" target="_blank" rel="noopener noreferrer" class="w-full bg-[#281424] text-[#cba864] py-2 rounded-xl text-xs font-semibold hover:bg-[#3d1f37] transition-all">
           Chamar no WhatsApp
         </a>
       </div>
@@ -400,10 +402,10 @@
       <!-- E-mail -->
       <div class="bg-white border border-[#ebdccb] rounded-2xl p-5 text-center flex flex-col justify-between shadow-sm">
         <div>
-          <div class="text-[10px] uppercase tracking-wider text-[#7d726d] font-bold mb-1">E-mail</div>
-          <p class="font-mono text-xs text-[#231221] font-medium mb-4 break-all">quintinojulioperfumaria@gmail.com</p>
+          <div class="text-[10px] uppercase tracking-wider text-[#786f6a] font-bold mb-1">E-mail</div>
+          <p class="font-mono text-xs text-[#281424] font-medium mb-4 break-all">quintinojulioperfumaria@gmail.com</p>
         </div>
-        <a href="mailto:quintinojulioperfumaria@gmail.com" class="w-full bg-white border border-[#ebdccb] text-[#3d3434] py-2 rounded-xl text-xs font-semibold hover:border-[#c39b56] transition-all">
+        <a href="mailto:quintinojulioperfumaria@gmail.com" class="w-full bg-white border border-[#ebdfd3] text-[#332d2b] py-2 rounded-xl text-xs font-semibold hover:border-[#cba864] transition-all">
           Enviar e-mail
         </a>
       </div>
@@ -411,10 +413,10 @@
       <!-- Endereço -->
       <div class="bg-white border border-[#ebdccb] rounded-2xl p-5 text-center flex flex-col justify-between shadow-sm">
         <div>
-          <div class="text-[10px] uppercase tracking-wider text-[#7d726d] font-bold mb-1">Endereço</div>
-          <p class="text-xs text-[#231221] font-medium mb-4">Travessa Somos Todos Iguais, 741 - Jardim da Conquista, São Paulo - SP</p>
+          <div class="text-[10px] uppercase tracking-wider text-[#786f6a] font-bold mb-1">Endereço</div>
+          <p class="text-xs text-[#281424] font-medium mb-4">Travessa Somos Todos Iguais, 741 - Jardim da Conquista, São Paulo - SP</p>
         </div>
-        <a href="#como-chegar" class="w-full bg-white border border-[#ebdccb] text-[#3d3434] py-2 rounded-xl text-xs font-semibold hover:border-[#c39b56] transition-all">
+        <a href="#como-chegar" class="w-full bg-white border border-[#ebdfd3] text-[#332d2b] py-2 rounded-xl text-xs font-semibold hover:border-[#cba864] transition-all">
           Como chegar
         </a>
       </div>
@@ -424,11 +426,11 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div class="bg-white border border-[#ebdccb] rounded-2xl p-5 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="text-[10px] uppercase tracking-wider text-[#7d726d] font-bold mb-1">Pedidos Online</div>
-          <h4 class="font-serif font-bold text-base text-[#231221] mb-1">iFood</h4>
-          <p class="text-xs text-[#7d726d] mb-4">Consulte itens e pedidos.</p>
+          <div class="text-[10px] uppercase tracking-wider text-[#786f6a] font-bold mb-1">Pedidos Online</div>
+          <h4 class="font-serif font-bold text-base text-[#281424] mb-1">iFood</h4>
+          <p class="text-xs text-[#786f6a] mb-4">Consulte itens e pedidos.</p>
         </div>
-        <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/quintino-julio-perfumaria-jardim-da-conquista/ed8c0c02-8c92-4c82-aaaa-d707122a4439?UTM_Medium=share" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-white border border-[#ebdccb] text-[#3d3434] py-2 rounded-xl text-xs font-semibold hover:border-[#c39b56] hover:text-[#231221] transition-all flex items-center justify-center gap-1.5">
+        <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/quintino-julio-perfumaria-jardim-da-conquista/ed8c0c02-8c92-4c82-aaaa-d707122a4439?UTM_Medium=share" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-white border border-[#ebdccb] text-[#332d2b] py-2 rounded-xl text-xs font-semibold hover:border-[#cba864] hover:text-[#281424] transition-all flex items-center justify-center gap-1.5">
           <span class="w-2 h-2 rounded-full bg-red-500"></span>
           <span>Pedir pelo iFood</span>
         </a>
@@ -436,12 +438,12 @@
 
       <div class="bg-white border border-[#ebdccb] rounded-2xl p-5 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="text-[10px] uppercase tracking-wider text-[#7d726d] font-bold mb-1">Horários</div>
-          <p class="text-xs text-[#231221] font-medium mb-1"><strong>Segunda a sábado:</strong> 9h às 19h30min</p>
+          <div class="text-[10px] uppercase tracking-wider text-[#786f6a] font-bold mb-1">Horários</div>
+          <p class="text-xs text-[#281424] font-medium mb-1"><strong>Segunda a sábado:</strong> 9h às 18h50min</p>
           <p class="text-xs text-[#231221] font-medium mb-4"><strong>Domingo e feriados:</strong> 9h às 13h</p>
         </div>
-        <a href="https://wa.me/5511963126531" target="_blank" rel="noopener noreferrer" class="w-full text-center inline-flex items-center justify-center gap-1.5 bg-white border border-[#ebdccb] text-[#3d3434] py-2 rounded-xl text-xs font-semibold hover:border-[#c39b56] transition-all">
-          <i data-lucide="message-circle" class="w-3.5 h-3.5 text-[#c39b56]"></i>
+        <a href="https://wa.me/5511963126531" target="_blank" rel="noopener noreferrer" class="w-full text-center inline-flex items-center justify-center gap-1.5 bg-white border border-[#ebdfd3] text-[#332d2b] py-2 rounded-xl text-xs font-semibold hover:border-[#cba864] transition-all">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 text-[#cba864]"></i>
           <span>Falar no WhatsApp</span>
         </a>
       </div>
@@ -450,14 +452,14 @@
 
   <!-- BANNER FINAL -->
   <section class="max-w-6xl mx-auto px-4 py-8">
-    <div class="bg-[#231221] text-center rounded-3xl p-8 md:p-12 border border-[#c39b56]/30 shadow-xl relative overflow-hidden">
-      <p class="text-[10px] uppercase tracking-widest text-[#c39b56] font-bold mb-2">Perfumaria Quintino</p>
+    <div class="bg-[#281424] text-center rounded-3xl p-8 md:p-12 border border-[#cba864]/30 shadow-xl relative overflow-hidden">
+      <p class="text-[10px] uppercase tracking-widest text-[#cba864] font-bold mb-2">Perfumaria Quintino</p>
       <h2 class="font-serif text-2xl md:text-4xl font-bold text-white mb-3">Precisando de produtos para a sua rotina?</h2>
-      <p class="text-xs md:text-sm text-[#fbf9f5]/80 max-w-md mx-auto mb-6">
-        Fale com nossa equipe, consulte disponibilidade de itens e venha conhecer a Perfumaria Quintino.
+      <p class="text-xs md:text-sm text-[#faf7f2]/80 max-w-md mx-auto mb-6">
+        Fale com nossa equipe, consulte disponibilidade e venha conhecer a Perfumaria Quintino.
       </p>
 
-      <a href="https://wa.me/5511963126531" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#c39b56] text-[#231221] font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-full shadow-lg hover:bg-[#dfc18b] transition-all">
+      <a href="https://wa.me/5511963126531" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#cba864] text-[#281424] font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-full shadow-lg hover:bg-[#e0ca97] transition-all">
         <i data-lucide="message-circle" class="w-4 h-4"></i>
         <span>Falar no WhatsApp</span>
       </a>
@@ -465,20 +467,20 @@
   </section>
 
   <!-- RODAPÉ -->
-  <footer class="bg-white border-t border-[#ebdccb] py-10 mt-8">
+  <footer class="bg-white border-t border-[#ebdfd3] py-10 mt-8">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-8">
       <div class="flex items-center gap-3">
-        <div class="w-12 h-12 rounded-xl bg-[#231221] flex items-center justify-center shadow-sm border border-[#c39b56]/40">
-          <span class="font-serif text-2xl font-bold text-[#c39b56] leading-none pb-0.5">Q</span>
+        <div class="w-12 h-12 rounded-xl bg-[#281424] flex items-center justify-center shadow-sm border border-[#cba864]/40">
+          <span class="font-serif text-2xl font-bold text-[#cba864] leading-none pb-0.5">Q</span>
         </div>
         <div>
-          <span class="text-[10px] tracking-widest text-[#7d726d] uppercase font-semibold">Perfumaria</span>
-          <h4 class="font-serif text-xl font-bold text-[#231221] leading-tight">Quintino</h4>
-          <p class="text-[11px] text-[#7d726d]">Cosméticos & Higiene Pessoal</p>
+          <span class="text-[10px] tracking-widest text-[#786f6a] uppercase font-semibold">Perfumaria</span>
+          <h4 class="font-serif text-xl font-bold text-[#281424] leading-tight">Quintino</h4>
+          <p class="text-[11px] text-[#786f6a]">Cosméticos & Higiene Pessoal</p>
         </div>
       </div>
 
-      <div class="text-xs text-[#7d726d] space-y-1.5 md:text-right">
+      <div class="text-xs text-[#786f6a] space-y-1.5 md:text-right">
         <p>Travessa Somos Todos Iguais, 741 - Jardim da Conquista, São Paulo - SP</p>
         <p class="flex items-center gap-1.5 md:justify-end">
           <i data-lucide="message-circle" class="w-3.5 h-3.5 text-[#c39b56]"></i>
@@ -488,19 +490,11 @@
           <i data-lucide="mail" class="w-3.5 h-3.5 text-[#c39b56]"></i>
           <span>quintinojulioperfumaria@gmail.com</span>
         </p>
-        <div class="flex items-center gap-4 pt-2 md:justify-end font-semibold text-[#231221]">
-          <a href="#" class="inline-flex items-center gap-1 hover:text-[#c39b56] transition-colors">
-            <i data-lucide="instagram" class="w-3.5 h-3.5"></i> Instagram
-          </a>
-          <a href="#" class="inline-flex items-center gap-1 hover:text-[#c39b56] transition-colors">
-            <i data-lucide="facebook" class="w-3.5 h-3.5"></i> Facebook
-          </a>
-        </div>
       </div>
     </div>
 
-    <div class="max-w-6xl mx-auto px-4 pt-4 border-t border-[#ebdccb]/40 flex flex-col md:flex-row items-center justify-between text-[11px] text-[#7d726d] gap-2">
-      <p>© 2026 Quintino Info Perfumaria. Todos os direitos reservados.</p>
+    <div class="max-w-6xl mx-auto px-4 pt-4 border-t border-[#ebdfd3]/40 flex flex-col md:flex-row items-center justify-between text-[11px] text-[#786f6a] gap-2">
+      <p>© 2026 Quintino Júlio Perfumaria. Todos os direitos reservados.</p>
       <p>Consulte disponibilidade dos produtos.</p>
     </div>
   </footer>
